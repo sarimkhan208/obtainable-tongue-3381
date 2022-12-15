@@ -1,4 +1,4 @@
-const slider = document.getElementById("best-seller-cont");
+const slider = document.getElementById("suggestion");
 let isDown = false;
 let startX;
 let scrollLeft;

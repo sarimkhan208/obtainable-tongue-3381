@@ -32,7 +32,7 @@
     border: none;
     border-radius: 7px;
 }
-#navbar > div > button{
+#sign-in-btn{
     height: 38px;
     font-family: sans-serif;
     padding: 4px;
@@ -42,6 +42,14 @@
     background-color: #FC2779;
     color: white;
     border: none;
+}
+#sign-in-btn > a{
+    color: white;
+}
+#sign-in-btn:hover{
+    cursor: pointer;
+    background-color: #BDBDBD;
+
 }
 #sub-navbar{
     display: flex;
@@ -64,6 +72,23 @@
 }
 #ham-burger{
     display: none;
+}
+#burger{
+    height: 100%;
+    width: 40%;
+    font-family: sans-serif;
+    display: none;
+    display: relative;
+    z-index: 1;
+}
+#burger > div{
+    transition: color 0.3s ease;
+    margin-left: 10%;
+    padding-top: 10px;
+    font-size: large;
+}
+#burger > div:hover{
+    color: #FC2779;
 }
  
 /* TOP SECTION RESPONSIVE */
@@ -95,6 +120,18 @@
 }
 
 /* MIDDLE SECTION */
+#carousel{
+    z-index: -1;
+    width: 90%;
+    margin: auto auto 4% auto;
+}
+#carousel img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+
 
 #box1{
     display: flex;
@@ -498,3 +535,6 @@
         margin-bottom: 10px;
     }
 }
+
+
+

@@ -1,0 +1,368 @@
+body{
+    font-family: sans-serif;
+    background-color: #F5F5F5;
+}
+#product-container{
+    margin: auto;
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 30% 70%;
+    width: 80%;
+}
+#product-container img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #E0E0E0;
+}
+
+.desc{
+    background-color: white;
+    /* margin-left: 10%; */
+    padding-left: 5%;
+    border: 1px solid #E0E0E0;
+}
+.desc > h2 {
+    color: #001325;
+    font-weight: 300;
+    font-size: 150%;
+}
+.desc > h2+h3{
+    color: #001325;
+    font-weight: 300;
+    font-size: 120%;
+}
+.desc > p{
+    color: #001325;
+    font-size: 90%;
+    font-weight: 500;
+}
+.desc > p >span{
+    font-size: 130%;
+}
+.desc > h3 > span {
+    font-weight: 600;
+    font-size: 80%;
+    color: #001325A3;
+}
+#incl{
+    font-weight: 500;
+    font-size: 110%;
+    color: #001325A3;
+}
+.sample{
+    background-color:#6577861F;
+    border-radius: 7px;
+    width: 95%;
+    margin-bottom: 30px;
+}
+.sample > ul > li{
+    color: #001325EB;
+    padding: 7px 0 0 4px;
+    font-size: 100%;
+    font-weight: 500;
+}
+.sample > div{
+    color: #FC2779;
+    padding-left: 6%;
+    font-weight: 600;
+    padding-bottom: 1.5%;
+}
+.desc > div > button{
+    width: 27%;
+    height: 40px;
+    background-color: #FC2779;
+    border: none;
+    color: white;
+    font-size: 100%;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#pincode{
+    margin-left: 5%;
+    height: 35px;
+    width: 31%;
+}
+#check{
+    background-color: white;
+    width: 10%;
+    color: #FC2779;
+    border: 1px solid #FC2779;
+    margin-left: 5px;
+}
+#bag{
+    cursor: pointer;
+}
+#bag:hover{
+    border: 2px solid #FC2779;
+    background-color: white;
+    color: #FC2779;
+    font-weight: 600;
+}
+#policy{
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-evenly;
+    padding: 1.5%;
+    color: #001325BB;
+    font-size: 90%;
+    font-weight: 600;
+    border: 1px solid #E0E0E0;
+    background-color: #65778614;
+}
+#product-container +h2{
+    margin-left:10%;
+}
+
+/* SCROLLABALE */
+#suggestion{
+    padding: 30px;
+    padding-bottom:0 ;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    /* z-index: -1; */
+    cursor:pointer;
+    background-color: #ffffff;
+    /* z-index: -2; */
+    
+    width: 90%;
+    gap: 20px;
+    /* margin-left: 50px; */
+    margin: auto;
+    
+  }
+  #suggestion > div > button{
+    width: 100%;
+    height: 50px;
+    background-color: #FC2779;
+    color: white;
+    font-size: 120%;
+    border: none;
+    /* display: none; */
+  }
+ 
+  
+  #suggestion.active{
+    cursor: grabbing;
+  }
+  #suggestion::-webkit-scrollbar{
+    display:block ;
+  }
+  #suggestion>div{
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 8px;
+    /* text-align: center; */
+    word-wrap: wrap;
+    /* width:auto; */
+    font-size: 15px;
+    width: 500px;
+    
+}
+#suggestion > div > img{
+    width: 200px;
+    height: 300px;
+}
+#suggestion h3{
+    color: #142636;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+#suggestion p{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: large;
+}
+
+/* FOOTER SECTION */
+#footer-cont{
+    margin-top: 30px;
+    display: flex;
+    background-color: #3F414D;
+    padding: 20px  40px;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer-cont > div{
+    width: 27%;
+}
+.first > div{
+    font-size: 90%;
+    color: white;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.first input{
+    margin-right: 5px;
+    border:1px solid white;
+    background-color: #3F414D;
+    width: 60%;
+    height: 25px;
+    border-radius: 3px;
+}
+.first button{
+    background-color: #3F414D;
+    border: 2px solid white;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    width: 20%;
+    height: 27px;
+    border-radius: 3px;
+}
+.second > div > i{
+    color: white;
+    margin-right: 5px;
+}
+.second > div{
+    font-size: 90%;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+#app{
+    margin-top: 20px;
+    display: flex;
+    font-size: 180%;
+    justify-content: space-evenly;
+}
+.third{
+    margin-top: 15px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.third > div i{
+    font-size: 120%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.third > div{
+    font-size: 90%;
+    margin-bottom: 30px;
+}
+#pink-container{
+    padding: 3%;
+    background-color: #FC2779;
+}
+.terms{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 80%;
+    margin-bottom: 1%;
+}
+.right{
+    display: flex;
+    width: 50%;
+    color: white;
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 80%;
+    justify-content: center;
+
+}
+
+
+
+/* RESPONSIVES */
+@media (max-width:750px) and (min-width:450px){
+    #product-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #policy{
+        display: none;
+    }
+    #pincode{
+        padding-bottom: 3px;
+    }
+    #check{
+        width: 20%;
+    }
+    #footer-cont{
+        padding-top: 50px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #footer-cont > div{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .first, .second, .third{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .first button{
+        margin-top: 2%;
+        width: 62.5%;
+    }
+    .terms , .right{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:449px){
+    #product-container{
+        display: flex;
+       width: 90%;
+       margin: auto;
+        flex-direction: column;
+    }
+    #policy{
+        display: none;
+    }
+    #bag{
+        width: 95%;
+        margin: auto;
+    }
+    #pincode{
+        margin-top:5px;
+        border: 1px solid gray;
+        width: 50%;
+        margin-left: 0;
+    }
+    #check{
+        width: 41%;
+    }
+    #footer-cont{
+        font-size: 12px;
+        padding-top: 50px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #footer-cont > div{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .first, .second, .third{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .first button{
+        margin-top: 2%;
+        width: 62.5%;
+    }
+    .app i {
+       font-size: 30px;
+       margin-left: 50px;
+      }
+    .terms , .right{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}

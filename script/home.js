@@ -53,3 +53,18 @@ let ham2 = document.getElementById("ham-burger");
 ham.addEventListener("click",function(){
   document.getElementById("burger").style.display = "initial";
 })
+
+
+// Product
+let productCont = document.getElementById("feature-cont");
+productCont.addEventListener("click",function(){
+  window.location.href = "product.html"
+})
+let productCont1 = document.getElementById("suggestion");
+productCont1.addEventListener("click",function(){
+  window.location.href = "product.html"
+})
+let productCont2 = document.getElementById("top-brand-container");
+productCont2.addEventListener("click",function(){
+  window.location.href = "product.html"
+})

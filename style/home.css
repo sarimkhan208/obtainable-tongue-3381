@@ -1,5 +1,9 @@
 
 /* TOP SECTION */
+
+
+
+
 #navbar{
     display: flex;
     justify-content: space-around;
@@ -32,7 +36,7 @@
     border: none;
     border-radius: 7px;
 }
-#navbar > div > button{
+#sign-in-btn{
     height: 38px;
     font-family: sans-serif;
     padding: 4px;
@@ -42,6 +46,14 @@
     background-color: #FC2779;
     color: white;
     border: none;
+}
+#sign-in-btn > a{
+    color: white;
+}
+#sign-in-btn:hover{
+    cursor: pointer;
+    background-color: #BDBDBD;
+
 }
 #sub-navbar{
     display: flex;
@@ -64,6 +76,23 @@
 }
 #ham-burger{
     display: none;
+}
+#burger{
+    height: 100%;
+    width: 40%;
+    font-family: sans-serif;
+    display: none;
+    display: relative;
+    z-index: 1;
+}
+#burger > div{
+    transition: color 0.3s ease;
+    margin-left: 10%;
+    padding-top: 10px;
+    font-size: large;
+}
+#burger > div:hover{
+    color: #FC2779;
 }
  
 /* TOP SECTION RESPONSIVE */
@@ -95,6 +124,18 @@
 }
 
 /* MIDDLE SECTION */
+#carousel{
+    z-index: -1;
+    width: 90%;
+    margin: auto auto 4% auto;
+}
+#carousel img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+
 
 #box1{
     display: flex;
@@ -234,6 +275,7 @@
     width: 27%;
 }
 .first > div{
+    font-size: 90%;
     color: white;
     margin-bottom: 10px;
     font-family: sans-serif;
@@ -244,7 +286,7 @@
     border:1px solid white;
     background-color: #3F414D;
     width: 60%;
-    height: 35px;
+    height: 25px;
     border-radius: 3px;
 }
 .first button{
@@ -254,24 +296,24 @@
     font-family: sans-serif;
     font-weight: 600;
     width: 20%;
-    height: 37px;
+    height: 27px;
     border-radius: 3px;
 }
 .second > div > i{
-    
     color: white;
     margin-right: 5px;
 }
 .second > div{
+    font-size: 90%;
     font-family: sans-serif;
     font-weight: 600;
     color: white;
     margin-bottom: 10px;
 }
-.app{
+#app{
     margin-top: 20px;
     display: flex;
-    font-size: 40px;
+    font-size: 180%;
     justify-content: space-evenly;
 }
 .third{
@@ -281,10 +323,12 @@
     font-weight: 600;
 }
 .third > div i{
-    font-size: 20px;
+    font-size: 120%;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 .third > div{
+    font-size: 90%;
     margin-bottom: 30px;
 }
 #pink-container{
@@ -428,9 +472,6 @@
         margin-top: 2%;
         width: 62.5%;
     }
-    .app i {
-        margin-left: 50%;
-    }
     .terms , .right{
         width: 90%;
         margin-bottom: 10px;
@@ -492,9 +533,13 @@
     }
     .app i {
        font-size: 30px;
-    }
+       margin-left: 50px;
+      }
     .terms , .right{
         width: 90%;
         margin-bottom: 10px;
     }
 }
+
+
+

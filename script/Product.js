@@ -27,3 +27,11 @@ slider.addEventListener("mousemove", (e) => {
   slider.scrollLeft = scrollLeft - walk;
   console.log(walk);
 });
+
+
+// ADDING TO BAG
+
+let button = document.getElementById("bag")
+button.addEventListener("click",function(){
+  window.location.href = "cart.html";
+})

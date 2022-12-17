@@ -1,10 +1,10 @@
+console.log("ok")
 let form = document.querySelector("form");
 let heading = document.querySelector("h1");
 let ogCred = JSON.parse(localStorage.getItem("data"))
 
 form.addEventListener("submit",function(e){
     e.preventDefault();
-    console.log("ok")
     let applyobj = {
         email : form.email.value,
         password : form.password.value

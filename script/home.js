@@ -1,3 +1,5 @@
+
+console.log("ok")
 const slider = document.getElementById("suggestion");
 let isDown = false;
 let startX;

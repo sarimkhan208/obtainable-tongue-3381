@@ -1,11 +1,8 @@
 
 /* TOP SECTION */
-
-
-
-
 #navbar{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     font-family: sans-serif;
@@ -37,6 +34,7 @@
     border-radius: 7px;
 }
 #sign-in-btn{
+    /* display: none; */
     height: 38px;
     font-family: sans-serif;
     padding: 4px;
@@ -46,6 +44,7 @@
     background-color: #FC2779;
     color: white;
     border: none;
+
 }
 #sign-in-btn > a{
     color: white;
@@ -54,6 +53,9 @@
     cursor: pointer;
     background-color: #BDBDBD;
 
+}
+.fa-solid{
+    display: none;
 }
 #sub-navbar{
     display: flex;
@@ -82,8 +84,6 @@
     width: 40%;
     font-family: sans-serif;
     display: none;
-    display: relative;
-    z-index: 1;
 }
 #burger > div{
     transition: color 0.3s ease;
@@ -104,7 +104,13 @@
     display: none;
    }
    #ham-burger{
+    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    transition: all;
     display: initial;
+
+    }
+    #burger > div:hover{
+        color: #FC2779;
     }
     #navbar > div > input{
         display: none;
@@ -265,6 +271,7 @@
 }
 /* FOOTER SECTION */
 #footer-cont{
+    margin-top: 2%;
     display: flex;
     background-color: #3F414D;
     padding: 20px  40px;
@@ -452,6 +459,7 @@
         justify-content: center;
     }
     #footer-cont{
+        margin-top: 2%;
         padding-top: 50px;
         justify-content: center;
         align-items: center;
@@ -510,6 +518,7 @@
         justify-content: center;
     }
     #footer-cont{
+        margin-top: 2%;
         font-size: 12px;
         padding-top: 50px;
         justify-content: center;

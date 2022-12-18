@@ -1,5 +1,4 @@
 
-console.log("ok")
 const slider = document.getElementById("suggestion");
 let isDown = false;
 let startX;
@@ -51,11 +50,24 @@ setInterval(function(){
 
 // HAMBURGER SECTION
 let ham = document.getElementById("ham-burger");
-let ham2 = document.getElementById("ham-burger");
 ham.addEventListener("click",function(){
-  document.getElementById("burger").style.display = "initial";
-})
+  this.classList.toggle("is-active");
+  if (this.classList.contains('is-active')){
+    openNav();
+  } else {
+    closeNav();
+  }
 
+})
+function openNav(){
+  console.log("open");
+  document.getElementById("burger").style.display = "initial";
+  document.getElementById("burger").style.transition = "transform 250ms ease-in-out"
+}
+function closeNav(){
+  console.log("close nav")
+  document.getElementById("burger").style.display = "none";
+}
 
 // Product
 let productCont = document.getElementById("feature-cont");
@@ -70,3 +82,16 @@ let productCont2 = document.getElementById("top-brand-container");
 productCont2.addEventListener("click",function(){
   window.location.href = "product.html"
 })
+
+
+// let login = localStorage.getItem("login")
+// let signin = document.getElementById("sign-in-btn")
+// let icon  = document.querySelector("#icon")
+// if(login == true){
+//   signin.style.display = "none";
+//   icon.style.display = "block";
+// }
+// else{
+//   signin.style.display = "block";
+//   icon.style.display = "none";
+// }

@@ -15,6 +15,7 @@ form.addEventListener("submit",function(e){
         heading.innerText = "Sign in Successful"
         flag = true;
         setInterval(function(){
+            localStorage.setItem("login",true)
             window.location.href = "index.html";
         },2000)
          

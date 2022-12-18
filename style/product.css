@@ -2,6 +2,144 @@ body{
     font-family: sans-serif;
     background-color: #F5F5F5;
 }
+
+
+/* TOP SECTION */
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: white;
+}
+#search-bar{
+    display: none;
+}
+#navbar a{
+    text-decoration: none;
+    color: black;
+}
+#navbar > div > a:hover{
+    color: #FC2779;
+    cursor: pointer;
+
+}
+#navbar img{
+    height: 70px;
+}
+#navbar > div > input{
+    padding-left: 10px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight:600;
+    background-color: #9797971A;
+    border: none;
+    border-radius: 7px;
+}
+#sign-in-btn{
+    /* display: none; */
+    height: 38px;
+    font-family: sans-serif;
+    padding: 4px;
+    font-size: 14px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: #FC2779;
+    color: white;
+    border: none;
+
+}
+#sign-in-btn > a{
+    color: white;
+}
+#sign-in-btn:hover{
+    cursor: pointer;
+    background-color: #BDBDBD;
+
+}
+.fa-solid{
+    display: none;
+}
+#sub-navbar{
+    background-color: white;
+    display: flex;
+    height: 50px;
+    padding: 0 70px 0 70px;
+    align-items: center;
+    justify-content:space-evenly;
+    font-family: sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+#sub-navbar a{
+    text-decoration: none;
+    color: #03021A99;
+    font-size: 14px;
+}
+#sub-navbar > div >a:hover{
+    color: #FC2779;
+    font-weight: 600;
+    cursor: pointer;
+}
+#ham-burger{
+    display: none;
+}
+#burger{
+    height: 100%;
+    width: 40%;
+    font-family: sans-serif;
+    background-color: white;
+    display: none;
+    
+}
+#burger > div{
+    transition: color 0.3s ease;
+    margin-left: 10%;
+    padding-top: 10px;
+    font-size: large;
+}
+#burger > div:hover{
+    color: #FC2779;
+}
+ 
+/* TOP SECTION RESPONSIVE */
+@media (max-width: 950px){
+   #sub-navbar{
+    display: none;
+   }
+   #navbar > div > a{
+    display: none;
+   }
+   #ham-burger{
+    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    transition: all;
+    display: initial;
+
+    }
+    #burger > div:hover{
+        color: #FC2779;
+    }
+    #navbar > div > input{
+        display: none;
+    }
+    #search-bar{
+        display: initial;
+        height: 40px;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight:600;
+        background-color: #9797971A;
+        border: none;
+        border-radius: 7px;
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        background-color: white;
+    }
+    
+}
 #product-container{
     margin: auto;
     display: grid;
@@ -366,3 +504,4 @@ body{
         margin-bottom: 10px;
     }
 }
+

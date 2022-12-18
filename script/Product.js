@@ -35,3 +35,24 @@ let button = document.getElementById("bag")
 button.addEventListener("click",function(){
   window.location.href = "cart.html";
 })
+
+
+// HAMBURGER SECTION
+let ham = document.getElementById("ham-burger");
+ham.addEventListener("click",function(){
+  this.classList.toggle("is-active");
+  if (this.classList.contains('is-active')){
+    openNav();
+  } else {
+    closeNav();
+  }
+
+})
+function openNav(){
+  console.log("open");
+  document.getElementById("burger").style.display = "initial";
+}
+function closeNav(){
+  console.log("close nav")
+  document.getElementById("burger").style.display = "none";
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/714346974b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/cart.css">
+    <title>cart</title>
+</head>
+<body>
+    <nav>
+        <div><i class="fa-solid fa-arrow-left"></i> Bag <span> (1 item)</span></div>
+    </nav>
+    <div id="container">
+        <div><img src="https://images-static.nykaa.com/media/catalog/product/7/3/7394cb3773602345830.jpg" alt=""></div>
+        <div class="desc">
+            <h2 >M.A.C Prep + Prime Fix+ - Original</h2>
+            <h3>(100ml)</h3>
+            <h3 ><span>MRP: </span> ₹2150</h3>
+            <p><span>Qty</span> : 1</p>
+        </div>
+    </div>
+    <div id="grand">
+        <div id="first">
+            <h4>Product MRP</h4>
+            <h4>Discount</h4>
+            <h4>Shipping</h4>
+            <h3>You Pay</h3>
+        </div>
+        <div id="second">
+            <h4>₹2150</h4>
+            <h4>₹100</h4>
+            <h4>₹50</h4>
+            <h3>₹2100</h3>
+        </div>
+    </div>
+    <div id="final">
+        <div>
+            <div>₹2100</div>
+            <p>Grand Total</p>
+        </div>
+        <div>
+            <button>Proceed  <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+</body>
+<script>
+    let button =  document.querySelector("button")
+    button.addEventListener("click",function(){
+        window.location.href = "payment.html";
+    })
+</script>
+</html>

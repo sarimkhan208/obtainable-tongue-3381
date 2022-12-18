@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/714346974b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/home.css">
     <title>Eify Beauty</title>
@@ -15,7 +17,7 @@
         <div id="ham-burger"><i class="fas fa-bars"></i></div>
         <div>
             <img src="images/Eify.png" alt="logo">
-        </div>
+        </div>            
         <div><a href="">Categories</a></div>
         <div><a href="">Brand</a></div>
         <div><a href="">Luxe</a></div>
@@ -23,9 +25,10 @@
         <div><a href="">Beauty Advice</a></div>
         <div>
             <input type="text" name="" placeholder="Search on Eify" />
-            <button>Sign in</button>
+            <button id="sign-in-btn" ><a href="signin.html">Sign in</a></button>
         </div>
     </div>
+    
     <input type="text" name="" placeholder="Search on Eify" id="search-bar"/>
     <div id="sub-navbar">
         <div><a href="">Makeup</a></div>
@@ -40,7 +43,21 @@
         <div><a href="">Fragrance</a></div>
         <div><a href="">Pop Ups</a></div>
     </div>
-
+    <div id="burger">
+        <div>Categories</div>
+        <div>Brand</div>
+        <div>Luxe</div>
+        <div>Eify Fashion</div>
+        <div>Beauty Advice</div>
+        <div>Makeup</div>
+        <div>Skin</div>
+        <div>Hair</div>
+    </div>
+    <div id="top-brands-heading">
+        <div>Best In Beauty</div>
+        <p>Today's Top Offer</p>
+    </div>
+    <div id="carousel"></div>
     <div id="box1">
         <div> <img src="https://images-static.nykaa.com/uploads/e7af5dd2-c046-4223-a7f7-96b7b478bb3c.jpg?tr=w-600,cm-pad_resize" alt="" srcset="">
         </div>
@@ -53,7 +70,7 @@
         <div>Top Brands</div>
         <p>In The Spotlight</p>
     </div>
-    <div id="top-brand-container">
+    <div id="top-brand-container" id="productpage">
         <div>
             <img src="https://images-static.nykaa.com/uploads/68b07171-081a-474a-b8ad-44942045a74e.jpg?tr=w-400,cm-pad_resize" alt="">
             <h2>Happy New Hair, From Salons to You!</h2>
@@ -105,7 +122,7 @@
             <div>Only At Nykaa</div>
             <p>Exciting Deals On Exclusive Brands</p>
         </div>
-        <div id="top-brand-container">
+        <div id="top-brand-container" id="productpage">
             <div>
                 <img src="https://images-static.nykaa.com/uploads/493300db-f4b8-40da-8244-e2d722d9d6e9.png?tr=w-400,cm-pad_resize" alt="">
                 <h2>Upto 20% Off + Free Face Scrub on Rs. 799</h2>
@@ -134,7 +151,7 @@
         <div>Bestsellers</div>
         <p>Popular Pickups</p>
     </div>
-    <div id="suggestion">
+    <div id="suggestion" id="productpage">
         <div>
             <img src="https://images-static.nykaa.com/media/catalog/product/d/6/d66ecb320714215552.jpg" alt="">
             <h3>Clinique Take The Day Off Cleansing Balm (Makeup Remover)</h3>
@@ -206,7 +223,7 @@
         <div>Featured Brands</div>
         <p>Offers You Can't Miss</p>
     </div>
-    <div id="feature-cont">
+    <div id="feature-cont" id="productpage">
         <div>
             <img src="https://images-static.nykaa.com/uploads/02d63195-cfe6-4812-b908-881fcbcb411c.jpg?tr=w-240,cm-pad_resize" alt="">
             <h2>Up To 25% Off</h2>
@@ -267,11 +284,10 @@
         </div>
         <div class="second">
             <div><i class="fa-solid fa-mobile-screen"></i> Experience the Eify Beauty mobile app</div>
-            <div class="app"><i class="fa-brands fa-google-play"></i> <i class="fa-brands fa-apple"></i></div>
+            <div id="app"><i class="fa-brands fa-google-play"></i> <i class="fa-brands fa-apple"></i></div>
         </div>
         <div class="third">
-            <div><i class="fa-solid fa-phone"></i> FOR ANY HELP, YOU MAY CALL US</div>
-            <div>FOR ANY HELP, YOU MAY CALL US AT 1800-267-4444 (Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</div>
+            <div><i class="fa-solid fa-phone"></i> FOR ANY HELP, YOU MAY CALL US AT 1800-267-4444</div>
         </div>
     </div>
     
@@ -285,10 +301,10 @@
             <div>Privacy Policy</div>
         </div>
         <div class="right">
-            © 2022 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.
+            © 2022 Eifi E-Retail Pvt. Ltd. All Rights Reserved.
         </div>
     </div>
 
 </body>
-<script src="/obtainable-tongue-3381/script/home.js"></script>
+<script src="script/home.js"></script>
 </html>

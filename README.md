@@ -2,8 +2,7 @@
 Eify Beauty is a cosmetic website we you buy your cosmetic products
 
 ## Deployed Link
-Click to [Get Started](Eify Beauty is a cosmetic website we you buy your cosmetic products)
-[Get Started](https://online-voting-system-1bvlv6qtg-sarimkhan208.vercel.app/)
+Click to [Get Started](https://thunderous-mousse-e34bf3.netlify.app/)
 
 Teck Stacks 
 - HTML
